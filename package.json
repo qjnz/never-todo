@@ -2,7 +2,7 @@
   "name": "never-todo",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://qjnz.github.io/never-todo",
+  "homepage": "https://qjnz.github.io/never-todo",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
@@ -22,7 +22,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -b master -d build"
   },
   "eslintConfig": {
     "extends": "react-app"

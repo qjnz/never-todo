@@ -1,68 +1,96 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Create react app with typescript
 
-## Available Scripts
+## 1. Setup typescript in your create react app project:
 
-In the project directory, you can run:
+https://create-react-app.dev/docs/adding-typescript
 
-### `npm start`
+Uninstall existing global create-react-app first.
+```bash
+npm uninstall -g create-react-app
+```
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Create new react app with typescript 
+```bash
+npx create-react-app name-of-app --template typescript 
+```
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+### Add typescript to existing create react app project
+```bash 
+npm install --save typescript @types/node @types/react @types/react-dom @types/jest
+```
 
-### `npm test`
+https://react-typescript-cheatsheet.netlify.app/docs/basic/setup
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+https://github.com/typescript-cheatsheets/react#reacttypescript-cheatsheets
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 2. Example codes:
+https://github.com/Lemoncode/react-typescript-samples/
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+https://typeofnan.dev/your-first-react-typescript-project-todo-app/
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+## 3. Build & Deploy
+### Github pages in 2mins
+Make sure you do the following:
+1. Make your repo public if you are a free github user
+2. Go to your repository -> Settings -> Github Pages
+3. Select Source as `gh-pages` and select folder (normally `/(root)`) and Save
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+https://github.com/gitname/react-gh-pages
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+https://pages.github.com/
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+https://docs.github.com/en/free-pro-team@latest/github/working-with-github-pages
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+### Netlify in 30seconds?!
+https://www.netlify.com/blog/2016/07/22/deploy-react-apps-in-less-than-30-seconds/
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Heroku in 2mins:
+https://blog.heroku.com/deploying-react-with-zero-configuration
 
-### Code Splitting
+https://elements.heroku.com/buildpacks/mars/create-react-app-buildpack
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+```bash
+npm install -g create-react-app
+create-react-app my-app
+cd my-app
+git init
+heroku create -b https://github.com/mars/create-react-app-buildpack.git
+git add .
+git commit -m "react-create-app on Heroku"
+git push heroku master
+heroku open
+```
 
-### Analyzing the Bundle Size
+### Vercel (free account) in 2mins:
+https://vercel.com/guides/deploying-react-with-vercel-cra
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
 
-### Making a Progressive Web App
+### Many others: (AWS / azure etc)
+https://create-react-app.dev/docs/deployment/
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
 
-### Advanced Configuration
+## 4. Additional learning resources:
+https://egghead.io/courses/use-typescript-to-develop-react-applications
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+https://www.typescriptlang.org/play?jsx=2&esModuleInterop=true&e=196#example/typescript-with-react
 
-### Deployment
+https://github.com/typescript-cheatsheets/react-typescript-cheatsheet
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+https://levelup.gitconnected.com/ultimate-react-component-patterns-with-typescript-2-8-82990c516935
 
-### `npm run build` fails to minify
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+## Daily VSCode Tip:
+
+VSCode to open in existing window:
+`code -r .` 
+
+Found at: 
+https://www.reddit.com/r/vscode/comments/69riyn/how_to_open_a_folder_from_the_integrated_terminal/
+
+Use the `--reuse (-r)` flag.
+`code -r your/path`
+
