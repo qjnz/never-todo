@@ -39,10 +39,18 @@ Make sure you do the following:
 
 https://github.com/gitname/react-gh-pages
 
-https://pages.github.com/
-
 https://docs.github.com/en/free-pro-team@latest/github/working-with-github-pages
 
+### **gh-pages deployment issues:**
+https://gist.github.com/cobyism/4730490
+
+1. fatal: A branch named 'gh-pages' already exists
+
+https://stackoverflow.com/questions/63964575/fatal-a-branch-named-gh-pages-already-exists
+
+```bash
+rm -rf node_modules/.cache/gh-pages
+```
 
 ### Netlify in 30seconds?!
 https://www.netlify.com/blog/2016/07/22/deploy-react-apps-in-less-than-30-seconds/
