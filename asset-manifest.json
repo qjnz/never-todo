@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/never-todo/static/css/main.5f361e03.chunk.css",
+    "main.js": "/never-todo/static/js/main.f5bab3b6.chunk.js",
+    "main.js.map": "/never-todo/static/js/main.f5bab3b6.chunk.js.map",
+    "runtime-main.js": "/never-todo/static/js/runtime-main.6aeea707.js",
+    "runtime-main.js.map": "/never-todo/static/js/runtime-main.6aeea707.js.map",
+    "static/js/2.752bff90.chunk.js": "/never-todo/static/js/2.752bff90.chunk.js",
+    "static/js/2.752bff90.chunk.js.map": "/never-todo/static/js/2.752bff90.chunk.js.map",
+    "index.html": "/never-todo/index.html",
+    "precache-manifest.456d753ba05494ea38dddb0bf3c7e660.js": "/never-todo/precache-manifest.456d753ba05494ea38dddb0bf3c7e660.js",
+    "service-worker.js": "/never-todo/service-worker.js",
+    "static/css/main.5f361e03.chunk.css.map": "/never-todo/static/css/main.5f361e03.chunk.css.map",
+    "static/js/2.752bff90.chunk.js.LICENSE.txt": "/never-todo/static/js/2.752bff90.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6aeea707.js",
+    "static/js/2.752bff90.chunk.js",
+    "static/css/main.5f361e03.chunk.css",
+    "static/js/main.f5bab3b6.chunk.js"
+  ]
+}
