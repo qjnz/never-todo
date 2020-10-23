@@ -4,21 +4,19 @@
   "private": true,
   "homepage": "https://qjnz.github.io/never-todo",
   "dependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.5.0",
-    "@testing-library/user-event": "^7.2.1",
     "@types/jest": "^26.0.15",
     "@types/node": "^14.14.2",
     "@types/react": "^16.9.53",
     "@types/react-dom": "^16.9.8",
     "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-    "react-scripts": "3.4.4",
-    "typescript": "^4.0.3"
+    "react-dom": "^17.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
+    "prebuild": "npm run lint && npm test",
     "build": "react-scripts build",
+    "tslint-check": "tslint-config-prettier-check ./tslint.json",
+    "lint": "tslint -c tslint.json src/**/*.{ts,tsx} --fix --format verbose",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
@@ -40,6 +38,26 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^3.1.0"
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.5.0",
+    "@testing-library/user-event": "^7.2.1",
+    "gh-pages": "^3.1.0",
+    "husky": "^4.3.0",
+    "lint-staged": "^10.4.2",
+    "prettier": "2.1.2",
+    "react-scripts": "3.4.4",
+    "tslint": "^6.1.3",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-plugin-prettier": "^2.3.0",
+    "tslint-react": "^5.0.0",
+    "typescript": "^4.0.3"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{ts,tsx,js,css,md}": "prettier --write"
   }
 }
