@@ -6,6 +6,10 @@ interface Props {
 }
 
 export const TodoListItem: FC<Props> = ({ todo, toggleTodo }) => {
+  const onClick = () => {
+    toggleTodo(todo)
+  }
+
   return (
     <li>
       <label
@@ -13,12 +17,11 @@ export const TodoListItem: FC<Props> = ({ todo, toggleTodo }) => {
         style={{ textDecoration: todo.completed ? 'line-through' : undefined }}
       >
         <input
-          name={todo.text}
+          id={todo.text}
           type="checkbox"
+          defaultChecked={false}
           checked={todo.completed}
-          onClick={() => {
-            toggleTodo(todo)
-          }}
+          onClick={onClick}
         />
         {todo.text}
       </label>
