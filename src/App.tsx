@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { TodoList } from './components/TodoList'
 import { AddTodo } from './components/AddTodo'
+import { ShowGiphys } from './components/ShowGiphys'
 import './App.css'
 
 const initialTodos: Todo[] = [
@@ -42,6 +43,7 @@ const App = () => {
     <div className="container">
       <AddTodo addTodo={addTodo} />
       <TodoList todos={todos} toggleTodo={toggleTodo} />
+      <ShowGiphys keyword="happy monday" />
     </div>
   )
 }
